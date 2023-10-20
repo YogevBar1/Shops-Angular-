@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+    font-size: larger;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: ____;
+    background-image: linear-gradient(____, ____);
+}
+
+a {
+    color: blue;
+}
+

@@ -1,0 +1,19 @@
+<!-- Add an input field for searching by shop name -->
+<input type="text" [(ngModel)]="searchName" (input)="onSearch()" placeholder="Search by Shop Name">
+
+<table>
+  <thead>
+    <tr>
+      <th>Shop Name</th>
+      <th>Category</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let shop of filteredShops">
+      <td>{{ shop.name }}</td>
+      <td>{{ shop.category?.categoryName }}</td>
+      <td>{{ shop.address }}</td>
+    </tr>
+  </tbody>
+</table>
